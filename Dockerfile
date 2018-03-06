@@ -7,4 +7,4 @@ RUN apt-get install -y vim
 RUN apt-get install -y sudo
 RUN apt-get install -y net-tools
 COPY ${WORKSPACE}/target/gamutkart.war /usr/local/tomcat/webapps
-ENTRYPOINT /usr/local/tomcat/bin/stratup.sh
+#ENTRYPOINT /usr/local/tomcat/bin/stratup.sh
