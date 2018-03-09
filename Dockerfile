@@ -6,6 +6,6 @@ RUN apt-get install -y git
 RUN apt-get install -y vim
 RUN apt-get install -y sudo
 RUN apt-get install -y net-tools
-RUN cd /usr/local/tomcat/webapps && http://localhost:8081/nexus/service/local/repositories/releases/content/com/gamutgurus/gamutkart/1.0/gamutkart-1.0.war
+RUN cd /usr/local/tomcat/webapps && wget http://localhost:8081/nexus/service/local/repositories/releases/content/com/gamutgurus/gamutkart/1.0/gamutkart-1.0.war
 ENTRYPOINT /usr/local/tomcat/bin/stratup.sh && bash
 WORKDIR /
